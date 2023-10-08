@@ -1,0 +1,56 @@
+[
+    {
+        "id": 1,
+        "image_url": "https://i.ibb.co/Hgdj8SK/yoga-1.jpg",
+        "thumbnail_url": "https://i.ibb.co/BcYcBwy/thumbnail-1.jpg",
+        "title": "Yoga Class",
+        "price": "$20",
+        "short_description": "Join our rejuvenating yoga class, designed for all levels. Discover inner peace, flexibility, and holistic well-being.",
+        "details": "Immerse yourself in the serenity of yoga. Our class blends traditional poses with mindful breathing, promoting physical strength, mental clarity, and emotional balance. Suitable for beginners and experienced practitioners alike, this session caters to diverse fitness levels. Certified instructors guide you through a harmonious flow, fostering relaxation and stress reduction. Embrace the transformative power of yoga in a welcoming environment. Whether you seek physical vitality or mental tranquility, our yoga class is a sanctuary for holistic health."
+    },
+    {
+        "id": 2,
+        "image_url": "https://i.ibb.co/TM4yvGP/yoga2.jpg",
+        "thumbnail_url": "https://i.ibb.co/48L0LRP/thumbnail-2.jpg",
+        "title": "Meditation Workshop",
+        "price": "$15",
+        "short_description": "Explore the art of meditation to enhance mindfulness and stress resilience. Unwind, relax, and cultivate a peaceful state of mind.",
+        "details": "Delve into the profound benefits of meditation in our workshop. Learn diverse techniques to quiet the mind, deepen self-awareness, and foster a sense of tranquility. Expert instructors guide you through mindfulness practices, promoting emotional balance and mental clarity. Suitable for beginners and those seeking to deepen their meditation practice, this workshop offers practical tools for incorporating mindfulness into daily life. Discover the transformative impact of regular meditation on overall well-being."
+    },
+    {
+        "id": 3,
+        "image_url": "https://i.ibb.co/9cYt50Q/yoga3.jpg",
+        "thumbnail_url": "https://i.ibb.co/JrsQ2Kb/thumbnail-3.jpg",
+        "title": "Fitness Bootcamp",
+        "price": "$30",
+        "short_description": "Elevate your fitness journey with our dynamic bootcamp. Achieve peak physical condition through high-intensity workouts and personalized coaching.",
+        "details": "Our Fitness Bootcamp is an immersive experience designed to push your limits and maximize results. Led by certified fitness trainers, the program incorporates a mix of strength training, cardio, and functional exercises. Tailored to individual fitness levels, the bootcamp fosters a supportive community, motivating participants to achieve their fitness goals. Join us for an energizing and challenging workout that boosts metabolism, builds strength, and enhances overall cardiovascular health."
+    },
+    {
+        "id": 4,
+        "image_url": "https://i.ibb.co/NnxKHSy/yoga9.jpg",
+        "thumbnail_url": "https://i.ibb.co/6J93v34/thumbnail-9.jpg",
+        "title": "Nutrition Consultation",
+        "price": "$40",
+        "short_description": "Prioritize your well-being with personalized nutrition guidance. Our consultations offer expert advice tailored to your lifestyle and health objectives.",
+        "details": "Optimize your health through our Nutrition Consultation service. Our experienced nutritionists provide personalized assessments, creating custom plans to support your unique health goals. Whether you aim to lose weight, enhance athletic performance, or improve overall well-being, our consultations offer practical dietary advice. From meal planning to addressing nutritional imbalances, we guide you towards sustainable and nourishing lifestyle choices."
+    },
+    {
+        "id": 5,
+        "image_url": "https://i.ibb.co/DwDH25R/yoga7.jpg",
+        "thumbnail_url": "https://i.ibb.co/NVvRpbk/thumbnail-7.jpg",
+        "title": "Mind-Body Flow Workshop",
+        "price": "$25",
+        "short_description": "Experience the synergy of mind and body through this transformative workshop. Integrating movement, mindfulness, and breathwork for holistic well-being.",
+        "details": "Immerse yourself in the Mind-Body Flow Workshop, a holistic approach to wellness. This transformative experience combines yoga, mindfulness, and breathwork to enhance mind-body connection. Led by experienced facilitators, the workshop explores the integration of movement and meditation, fostering a sense of harmony and vitality. Suitable for all levels, participants will leave with practical tools to cultivate balance, reduce stress, and enhance overall well-being."
+    },
+    {
+        "id": 6,
+        "image_url": "https://i.ibb.co/rk9xHJm/yoga6.jpg",
+        "thumbnail_url": "https://i.ibb.co/L8rNrTL/thumbnail-6.jpg",
+        "title": "Outdoor Yoga Retreat",
+        "price": "$50",
+        "short_description": "Escape to nature with our rejuvenating outdoor yoga retreat. Immerse yourself in serenity, deepen your practice, and recharge your mind and body.",
+        "details": "Elevate your yoga journey with our Outdoor Yoga Retreat, set against the backdrop of nature's beauty. Led by seasoned yoga instructors, this retreat combines daily yoga sessions, meditation, and mindfulness practices. The serene outdoor environment enhances the transformative power of yoga, providing a unique opportunity for self-discovery and renewal. Whether you're a seasoned yogi or a beginner, this retreat offers a chance to reconnect with yourself and experience the profound benefits of yoga in a tranquil natural setting."
+    }
+]
