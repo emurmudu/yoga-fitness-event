@@ -15,7 +15,7 @@ const Login = () => {
             <h2 className=" text-center text-3xl mt-4 mb-4">Please Login</h2>
 
             <div className="">
-                <form onSubmit={handleLogin} className="card-body md:w-3/4 lg:w-1/2 mx-auto shadow-2xl">
+                <form onSubmit={handleLogin} className="card-body w-3/4 md:w-2/4 lg:w-2/5 mx-auto shadow-2xl">
 
                     <div className="form-control">
                         <label className="label">
