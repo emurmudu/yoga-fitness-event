@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const Banner = () => {
     return (
-        <div className="h-[88vh] relative">
+        <div className="h-screen relative">
 
             <div
                 className="absolute inset-0 bg-cover bg-center opacity-40"
@@ -13,10 +13,13 @@ const Banner = () => {
 
 
             <div className="absolute inset-0 flex flex-col justify-center items-center text-white">
-                <h1 className=" text-xl md:text-2xl lg:text-6xl text-pink-600 font-bold mb-4">Yoga And Fitness Retreats</h1>
+                <h1 className=" text-xl md:text-2xl lg:text-6xl text-pink-600 font-bold">Yoga And Fitness Retreats</h1>
+                <div className=" py-4 mb-4">
+                    <p className=" text-pink-600 font-bold md:text-xl text-lg">Empower Your Body, Free Your Mind: Embrace Yoga & Fitness for a Healthier You!</p>
+                </div>
                 <div className="flex items-center">
                     <Link to="/register">
-                        <button className="px-4 py-2 bg-pink-500 text-white rounded-md hover:bg-blue-600 focus:outline-none">
+                        <button className="px-4 py-2 bg-pink-500 text-white rounded-md hover:bg-black focus:outline-none">
                             Register Now
                         </button>
                     </Link>
