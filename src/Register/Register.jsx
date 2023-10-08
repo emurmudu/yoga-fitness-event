@@ -1,16 +1,19 @@
 import { createUserWithEmailAndPassword } from "firebase/auth";
 import { Link, NavLink } from "react-router-dom";
 import auth from "../firebase/firebase.config";
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { ToastContainer, toast } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
 import { FaEye, FaEyeSlash } from 'react-icons/fa';
+import { AuthContext } from "../Providers/AuthProvider";
 
 
 const Register = () => {
     const [registerError, setRegisterError] = useState('');
     const [success, setSuccess] = useState('');
     const [showPassword, setShowPassword] = useState(false);
+
+    const { createUser } = useContext(AuthContext);
 
 
 
@@ -37,18 +40,29 @@ const Register = () => {
         setRegisterError('');
         setSuccess('');
 
-        createUserWithEmailAndPassword(auth, email, password)
+        /* createUserWithEmailAndPassword(auth, email, password)
             .then(result => {
                 console.log(result.user)
                 toast('You have registered successfully', {
                     position: toast.POSITION.TOP_CENTER,
                 });
-
-
-
             })
             .catch(error => {
                 console.log(error)
+                setRegisterError(error.message);
+            }) */
+
+
+
+        createUser(email, password)
+            .then(result => {
+                console.log(result.user)
+                toast('You have registered successfully', {
+                    position: toast.POSITION.TOP_CENTER,
+                });
+            })
+            .catch(error => {
+                console.error(error)
                 setRegisterError(error.message);
             })
 
@@ -82,18 +96,15 @@ const Register = () => {
                                 {showPassword ? <FaEyeSlash></FaEyeSlash> : <FaEye></FaEye>}
                             </span>
                         </div>
-                        {
-                            registerError && <p className=" text-red-600 mt-2">{registerError}</p>
-                        }
+
                     </div>
                     <div className="form-control mt-6">
                         <button className="btn btn-secondary">Register</button>
                         <ToastContainer />
+                        {
+                            registerError && <p className=" text-red-600 mt-2">{registerError}</p>
+                        }
                     </div>
-
-                    {
-                        success && <p className=" text-green-600">{success}</p>
-                    }
                     <p>Have an account? <NavLink className=" text-pink-400 font-bold" to="/login">Login</NavLink></p>
                 </form>
 
