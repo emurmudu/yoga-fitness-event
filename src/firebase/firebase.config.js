@@ -6,12 +6,19 @@ import { getAuth } from "firebase/auth";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-    apiKey: "AIzaSyA4eCJ-k0OS-Yu73iZePNdpU8GSntTU0NY",
-    authDomain: "yoga-fitness-event.firebaseapp.com",
-    projectId: "yoga-fitness-event",
-    storageBucket: "yoga-fitness-event.appspot.com",
-    messagingSenderId: "300863166648",
-    appId: "1:300863166648:web:f6e94c2591d23b2aa07c4d"
+    // apiKey: "AIzaSyA4eCJ-k0OS-Yu73iZePNdpU8GSntTU0NY",
+    // authDomain: "yoga-fitness-event.firebaseapp.com",
+    // projectId: "yoga-fitness-event",
+    // storageBucket: "yoga-fitness-event.appspot.com",
+    // messagingSenderId: "300863166648",
+    // appId: "1:300863166648:web:f6e94c2591d23b2aa07c4d"
+
+    apiKey: import.meta.env.VITE_apiKey,
+    authDomain: import.meta.env.VITE_authDomain,
+    projectId: import.meta.env.VITE_projectId,
+    storageBucket: import.meta.env.VITE_storageBucket,
+    messagingSenderId: import.meta.env.VITE_messagingSenderId,
+    appId: import.meta.env.VITE_appId
 };
 
 // Initialize Firebase
