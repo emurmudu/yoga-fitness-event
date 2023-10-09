@@ -1,5 +1,5 @@
 import { createUserWithEmailAndPassword } from "firebase/auth";
-import { Link, NavLink } from "react-router-dom";
+import { Link, NavLink, useNavigate } from "react-router-dom";
 import auth from "../firebase/firebase.config";
 import { useContext, useState } from "react";
 import { ToastContainer, toast } from "react-toastify";
@@ -9,6 +9,7 @@ import { AuthContext } from "../Providers/AuthProvider";
 
 
 const Register = () => {
+    const navigate = useNavigate();
     const [registerError, setRegisterError] = useState('');
     const [success, setSuccess] = useState('');
     const [showPassword, setShowPassword] = useState(false);
@@ -60,6 +61,9 @@ const Register = () => {
                 toast('You have registered successfully', {
                     position: toast.POSITION.TOP_CENTER,
                 });
+                e.target.reset();
+                navigate("/");
+
             })
             .catch(error => {
                 console.error(error)

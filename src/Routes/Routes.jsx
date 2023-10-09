@@ -8,6 +8,7 @@ import About from "../Pages/About/About";
 import Gallery from "../Pages/Gallery/Gallery";
 import Profile from "../Pages/Profile/Profile";
 import Members from "../Pages/Members/Members";
+import PrivateRoutes from "./PrivateRoutes";
 
 const router = createBrowserRouter([
     {
@@ -29,11 +30,11 @@ const router = createBrowserRouter([
             },
             {
                 path: '/profile',
-                element: <Profile></Profile>
+                element: <PrivateRoutes><Profile></Profile></PrivateRoutes>
             },
             {
                 path: '/members',
-                element: <Members></Members>
+                element: <PrivateRoutes><Members></Members></PrivateRoutes>
             },
             {
                 path: '/login',

@@ -1,14 +1,16 @@
 import { useContext, useState } from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import { AuthContext } from "../Providers/AuthProvider";
 import { ToastContainer, toast } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
 import { FaEye, FaEyeSlash } from 'react-icons/fa';
 
 const Login = () => {
-    const { signInWithUser } = useContext(AuthContext);
+    const navigate = useNavigate();
+    const { signInWithUser, signInWithGoogle } = useContext(AuthContext);
     const [userError, setUserError] = useState('');
     const [showPassword, setShowPassword] = useState(false);
+
 
     const handleLogin = e => {
         e.preventDefault();
@@ -16,19 +18,35 @@ const Login = () => {
         const password = e.target.password.value;
         console.log(email, password);
 
+        setUserError('');
+
 
 
         signInWithUser(email, password)
             .then(result => {
                 console.log(result.user)
                 toast('Login Successful!');
+                e.target.reset();
+                navigate("/");
             })
             .catch(error => {
                 console.error(error)
                 setUserError(error.message);
             })
-
     }
+
+
+    const handleGoogleSignIn = () => {
+        signInWithGoogle()
+            .then(result => {
+                console.log(result.user);
+                navigate("/");
+            })
+            .catch(error => {
+                console.error(error);
+            })
+    }
+
     return (
         <div className=" mx-auto">
             {/* <Navbar></Navbar> */}
@@ -62,6 +80,7 @@ const Login = () => {
                         }
                     </div>
                     <p>Not have an account? <NavLink className=" text-pink-400 font-bold" to="/register">Register</NavLink></p>
+                    <p>Login with <button onClick={handleGoogleSignIn} className="btn btn-ghost">Google</button></p>
                 </form>
 
 

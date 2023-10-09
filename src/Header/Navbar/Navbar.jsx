@@ -1,13 +1,29 @@
-import { Link, NavLink } from "react-router-dom";
-import userPic from '../../assets/user.png'
+import { NavLink } from "react-router-dom";
+import { useContext } from "react";
+import { AuthContext } from "../../Providers/AuthProvider";
+import { ToastContainer, toast } from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css';
 
 const Navbar = () => {
+    const { user, logOut } = useContext(AuthContext);
+
+    const handleLogOUt = () => {
+        logOut()
+            .then(() => toast('You are logged out'))
+            .catch(error => console.error(error))
+    }
+
     const navLinks = <>
         <li><NavLink to="/">Home</NavLink></li>
         <li><NavLink to="/about">About</NavLink></li>
         <li><NavLink to="/gallery">Gallery</NavLink></li>
-        <li><NavLink to="/profile">Profile</NavLink></li>
-        <li><NavLink to="/members">Members</NavLink></li>
+        {
+            user &&
+            <>
+                <li><NavLink to="/profile">Profile</NavLink></li>
+                <li><NavLink to="/members">Members</NavLink></li>
+            </>
+        }
 
     </>
     return (
@@ -35,14 +51,32 @@ const Navbar = () => {
                 </ul>
             </div>
             <div className="navbar-end">
-                <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
+
+                {
+                    user ? <>
+                        <span className=" p-2">{user.displayName
+                        }</span>
+                        <div className="flex items-center">
+                            {/* <img src={userPic} /> */}
+                            <img className="btn btn-ghost btn-circle avatar" src={user.photoURL
+                            } />
+                            <a onClick={handleLogOUt} className="btn btn-sm text-pink-400 font-bold">Sign Out</a>
+                            <ToastContainer />
+                        </div>
+                    </>
+                        :
+                        <NavLink to="/login">
+                            <button className="btn text-pink-400 font-bold">Login</button>
+                        </NavLink>
+                }
+                {/* <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
                     <div className="w-10 rounded-full">
                         <img src={userPic} />
                     </div>
                 </label>
                 <NavLink to="/login">
                     <button className="btn text-pink-400 font-bold">Login</button>
-                </NavLink>
+                </NavLink> */}
             </div>
         </div>
     );
