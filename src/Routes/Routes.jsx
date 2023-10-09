@@ -6,7 +6,6 @@ import Login from "../Login/Login";
 import Register from "../Register/Register";
 import About from "../Pages/About/About";
 import Gallery from "../Pages/Gallery/Gallery";
-import Profile from "../Pages/Profile/Profile";
 import Members from "../Pages/Members/Members";
 import PrivateRoutes from "./PrivateRoutes";
 import ServicesDetail from "../Pages/ServicesDetail/ServicesDetail";
