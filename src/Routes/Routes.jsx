@@ -10,6 +10,7 @@ import Profile from "../Pages/Profile/Profile";
 import Members from "../Pages/Members/Members";
 import PrivateRoutes from "./PrivateRoutes";
 import ServicesDetail from "../Pages/ServicesDetail/ServicesDetail";
+import ContactUs from "../ContactUs/ContactUs";
 
 const router = createBrowserRouter([
     {
@@ -31,12 +32,12 @@ const router = createBrowserRouter([
                 element: <About></About>
             },
             {
-                path: '/gallery',
-                element: <Gallery></Gallery>
+                path: '/contact',
+                element: <ContactUs></ContactUs>
             },
             {
-                path: '/profile',
-                element: <PrivateRoutes><Profile></Profile></PrivateRoutes>
+                path: '/gallery',
+                element: <PrivateRoutes><Gallery></Gallery></PrivateRoutes>
             },
             {
                 path: '/members',

@@ -28,7 +28,7 @@ const RightSideHome = () => {
                 </button>
 
             </div>
-            <div className='p-4 mb-6'>
+            <div className='p-4 mb-6 w-full'>
                 <h2 className="text-lg md:text-2xl text-pink-400 font-bold mb-4">Find Us on</h2>
                 <a className='p-4 flex text-lg items-center border rounded-t-lg' href="https://www.facebook.com/" target='_blank' rel="noreferrer">
                     <FaFacebook className='mr-3'></FaFacebook>
