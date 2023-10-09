@@ -1,13 +1,9 @@
 
-// IoCheckmarkSharp
-// IoCheckmarkDoneOutline
-// import { FaBee, } from 'react-icons/fa';
-import { IoMdCheckmark } from 'react-icons/io';
 import { BiSolidRightArrow } from 'react-icons/bi';
 const LeftSideHome = () => {
     return (
-        <div className=" pl-9 border p-4">
-            <div className='mt-6'>
+        <div className=" pl-9 p-4 md:text-left text-center">
+            <div className='mt-4'>
                 <h1 className=' text-lg md:text-2xl mb-4 text-pink-400 font-bold'>Why Need Yoga </h1>
                 <ol className=' space-y-2'>
                     <li className='flex items-center gap-1'> <BiSolidRightArrow className=' text-pink-400'></BiSolidRightArrow> <span>It Increases Flexibility</span> </li>

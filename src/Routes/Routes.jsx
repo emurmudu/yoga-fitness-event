@@ -9,6 +9,7 @@ import Gallery from "../Pages/Gallery/Gallery";
 import Profile from "../Pages/Profile/Profile";
 import Members from "../Pages/Members/Members";
 import PrivateRoutes from "./PrivateRoutes";
+import ServicesDetail from "../Pages/ServicesDetail/ServicesDetail";
 
 const router = createBrowserRouter([
     {
@@ -18,7 +19,12 @@ const router = createBrowserRouter([
         children: [
             {
                 path: '/',
-                element: <Home></Home>
+                element: <Home></Home>,
+                loader: () => fetch('/yoga.json')
+            },
+            {
+                path: '/services/:id',
+                element: <PrivateRoutes><ServicesDetail></ServicesDetail></PrivateRoutes>
             },
             {
                 path: '/about',

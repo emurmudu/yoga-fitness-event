@@ -19,9 +19,9 @@ const RightSideHome = () => {
             })
     }
     return (
-        <div className=' pr-10 border'>
-            <div className='p-4 space-y-3 mb-6'>
-                <h2 className=" text-lg md:text-2xl text-pink-400 font-bold">Login With</h2>
+        <div className=' pr-10 md:text-left text-center'>
+            <div className='p-4 space-y-3 mb-6 mt-4'>
+                <h2 className=" text-lg md:text-2xl text-pink-400 font-bold mb-2">Login With</h2>
                 <button onClick={handleGoogleSignIn} className="btn btn-outline w-full">
                     <FaGoogle></FaGoogle>
                     Google
