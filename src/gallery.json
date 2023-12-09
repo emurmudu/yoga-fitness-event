@@ -1,0 +1,52 @@
+[
+    {
+        "id": 1,
+        "image_url": "https://i.ibb.co/rMwhGT6/gallery17.jpg",
+        "title": "Zen Yoga Retreat"
+    },
+    {
+        "id": 2,
+        "image_url": "https://i.ibb.co/THP3Ymp/gallery13.jpg",
+        "title": "Mountain Pose Mastery"
+    },
+    {
+        "id": 3,
+        "image_url": "https://i.ibb.co/1XLYP10/gallery11.jpg",
+        "title": "Urban Fitness Flow"
+    },
+    {
+        "id": 4,
+        "image_url": "https://i.ibb.co/MMGFfcy/gallery4.jpg",
+        "title": "Floating Meditation Garden"
+    },
+    {
+        "id": 5,
+        "image_url": "https://i.ibb.co/m4Z1hvt/gallery9.jpg",
+        "title": "Ocean Zen Workout"
+    },
+    {
+        "id": 6,
+        "image_url": "https://i.ibb.co/FgZX3hv/gallery6.jpg",
+        "title": "Autumn Asana Adventure"
+    },
+    {
+        "id": 7,
+        "image_url": "https://i.ibb.co/23c1tjc/gallary2.jpg",
+        "title": "Sunny Beach Body Bootcamp"
+    },
+    {
+        "id": 8,
+        "image_url": "https://i.ibb.co/Hp8gnMM/gallery14.jpg",
+        "title": "Galactic Fitness Journey"
+    },
+    {
+        "id": 9,
+        "image_url": "https://i.ibb.co/jTKDZXk/gallery3.jpg",
+        "title": "Wildlife Yoga Safari"
+    },
+    {
+        "id": 10,
+        "image_url": "https://i.ibb.co/JxGg00D/gallery12.jpg",
+        "title": "Abstract Fitness Artistry"
+    }
+]

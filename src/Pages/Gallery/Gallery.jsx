@@ -1,6 +1,7 @@
 
 
-import galleryData from './../../../public/gallery.json';
+// import galleryData from './../../../public/gallery.json';
+import galleryData from '../../gallery.json';
 
 const Gallery = () => {
     return (

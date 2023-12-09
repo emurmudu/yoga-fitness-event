@@ -1,5 +1,6 @@
 
-import membersInfo from './../../../public/members.json';
+// import membersInfo from './../../../public/members.json';
+import membersInfo from '../../members.json';
 const Members = () => {
     return (
         <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 p-4 md:p-6 lg:px-10 lg:mt-4 lg:mb-4 gap-4">

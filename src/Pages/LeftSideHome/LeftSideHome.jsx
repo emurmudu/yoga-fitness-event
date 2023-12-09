@@ -23,8 +23,8 @@ const LeftSideHome = () => {
             <div>
                 <h1 className=' text-lg md:text-2xl mt-4 mb-4 text-pink-400 font-bold'>Membership </h1>
                 <ol className=' space-y-2'>
-                    <li className='flex items-center gap-1'> <BiSolidRightArrow className=' text-pink-400'></BiSolidRightArrow> <span>It Founding members</span> </li>
-                    <li className='flex items-center gap-1'> <BiSolidRightArrow className=' text-pink-400'></BiSolidRightArrow> <span>It Life Membership (10 years)</span> </li>
+                    <li className='flex items-center gap-1'> <BiSolidRightArrow className=' text-pink-400'></BiSolidRightArrow> <span>Founding members</span> </li>
+                    <li className='flex items-center gap-1'> <BiSolidRightArrow className=' text-pink-400'></BiSolidRightArrow> <span>Life Membership (10 years)</span> </li>
                     <li className='flex items-center gap-1'> <BiSolidRightArrow className=' text-pink-400'></BiSolidRightArrow> <span>Personal membership</span> </li>
                     <li className='flex items-center gap-1'> <BiSolidRightArrow className=' text-pink-400'></BiSolidRightArrow> <span>Institutional membership</span> </li>
                 </ol>
